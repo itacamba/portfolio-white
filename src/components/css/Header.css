@@ -1,0 +1,13 @@
+header{
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.logo h1{
+    font-size: 27px;
+    letter-spacing: 2px;
+}
