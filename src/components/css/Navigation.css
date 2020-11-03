@@ -3,6 +3,7 @@
     cursor: pointer;
     position: fixed;
     z-index: 10;
+    top:37px;
 }
 
   .bar1, .bar3 {
@@ -64,4 +65,33 @@ nav a:hover{
     -webkit-transition:1s;
     -moz-transition:1s;
     color: black;
+}
+
+@media screen and (max-width: 475px){
+    #menu-icon-container{
+        top: 40px
+    }
+    .bar1, .bar3 {
+        width: 27px;
+        margin: 3px 0;
+    }
+    .invis {
+        width: 27px;
+        margin: 3px 0;
+    }
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-4px, 3px);
+        transform: rotate(-45deg) translate(-4px, 3px);
+      }
+      
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-4px, -3px);
+        transform: rotate(45deg) translate(-4px, -3px);
+    }
+    nav{
+        width: 70%;
+    }
+    nav a{
+        font-size: 15px;
+    }
 }
