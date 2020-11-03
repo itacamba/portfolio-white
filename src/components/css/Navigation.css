@@ -43,7 +43,7 @@ nav{
     transition:1s;
     -webkit-transition:1s;
     -moz-transition:1s;
-    transform: translateX(-100%);
+    transform: translateX(-120%);
     text-align: left;
 
 }
