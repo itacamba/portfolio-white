@@ -53,3 +53,16 @@
     font-size: 14px;
     color: rgba(155, 111, 30, 0.911);
 }
+
+
+@media screen and (max-width: 330px){
+    .max-600-container p {
+        text-align: left;
+    }
+    .skills{
+        flex-direction: column;
+    }
+    .skills-column:last-child{
+        margin-left: 0;
+    }
+}

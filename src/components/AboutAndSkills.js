@@ -22,14 +22,14 @@ const About = () => {
                 <h3>SKILLS</h3>
                 <div className="skills">
                     <div className="skills-column">
-                        <div><i class="fas fa-caret-right"></i> JavaScript</div>
-                        <div><i class="fas fa-caret-right"></i> Ruby</div>
-                        <div><i class="fas fa-caret-right"></i> Ruby on Rails</div>
+                        <div><i className="fas fa-caret-right"></i> JavaScript</div>
+                        <div><i className="fas fa-caret-right"></i> Ruby</div>
+                        <div><i className="fas fa-caret-right"></i> Ruby on Rails</div>
                     </div>
                     <div className="skills-column">
-                        <div><i class="fas fa-caret-right"></i> React</div>
-                        <div><i class="fas fa-caret-right"></i> HTML5/CSS3</div>
-                        <div><i class="fas fa-caret-right"></i> SQL</div>
+                        <div><i className="fas fa-caret-right"></i> React</div>
+                        <div><i className="fas fa-caret-right"></i> HTML5/CSS3</div>
+                        <div><i className="fas fa-caret-right"></i> SQL</div>
                     </div>
                 </div>
                 {/* <a href="" >DOWNLOAD RESUME</a> */}
