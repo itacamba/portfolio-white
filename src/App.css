@@ -9,6 +9,9 @@
 a{
   text-decoration: none;
 }
+p{
+  color: rgb(90, 66, 21);
+}
 h1{
   /* font-size: 27px; */
   letter-spacing: 1px;
@@ -69,6 +72,7 @@ h3{
   }
   p{
     font-size: 15px;
+
   }
 }
 
