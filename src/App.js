@@ -2,7 +2,7 @@ import './App.css';
 import Header from "./components/Header"
 import Main from './components/Main';
 import AboutAndSkills from './components/AboutAndSkills'
-import * as Scroll from 'react-scroll';
+// import * as Scroll from 'react-scroll';
 
 function App() {
   return (

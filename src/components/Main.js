@@ -15,7 +15,7 @@ const Main = () => {
                 I specialize in building web applications that
                 deliver exceptional user experiences.
             </p>
-            <a href=""><i className="fas fa-chevron-down"></i></a>
+            <a href="#/"><i className="fas fa-chevron-down"></i></a>
         </main>
     );
 };

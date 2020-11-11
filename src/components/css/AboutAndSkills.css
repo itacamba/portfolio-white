@@ -1,8 +1,13 @@
 #about-skills-section{
     width: 100%;
-    background-color: rgba(241, 232, 216, 0.445);
+    background-color: #f7f2ec;
     padding: 60px 0;
     text-align: left;
+}
+span{
+    font-weight: 600;
+    color: #f7f2ec;
+    font-family: 'Baskervville', serif;
 }
 .max-600-container{
     width: 80%;
@@ -20,13 +25,16 @@
     line-height: 30px;
     text-align: justify;
 }
-.max-600-container button{
+.underline-btn{
+    font-size: 15px;
     margin-top: 15px;
     border: none;
     background: transparent;
-    border-bottom: 1px solid rgba(189, 151, 82,.5);
-    color: rgb(189, 151, 82);
+    border-bottom: 1px solid rgba(190, 154, 109, 0.781);
+    color: #be9a6d;
     cursor: pointer;
+    display: inline-block;
+    outline: none;
 }
 .skills-container{
     margin-top: 60px;
@@ -54,7 +62,70 @@
     color: rgba(155, 111, 30, 0.911);
 }
 
+.modal{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,.7);
+}
 
+.modal-cover-img{
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+    position: relative;
+}
+.modal-cover-img img{
+    display: block;
+    width: 100%;
+}
+.modal-round-img{
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,20%);
+}
+.modal-content{
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    width: 90%;
+    max-height: 600px;
+    overflow-y: scroll;
+    background-color:#48544a;
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  }
+.modal-content p{
+    color: #f7f2ec;
+    padding: 0 25px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px){
+    .modal-round-img{
+        width: 35%;
+    }
+    .modal-content{
+        padding-top: 120px;
+        max-height: 400px;
+    }
+}
 @media screen and (max-width: 330px){
     .max-600-container p {
         text-align: left;
@@ -64,5 +135,11 @@
     }
     .skills-column:last-child{
         margin-left: 0;
+    }
+    .modal-content{
+        padding-top: 80px;
+    }
+    .modal-content p{
+        padding: 0 10px;
     }
 }
