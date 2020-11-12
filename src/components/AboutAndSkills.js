@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './css/AboutAndSkills.css'
 import Ada from "./images/ada-with-diagram.jpg"
 import Carla from "./images/carla-round-portrait.png"
+import Resume from "./images/resume.pdf"
 
 const About = () => {
     const [modalClicked, setModalClicked] = useState(false)
@@ -36,7 +37,7 @@ const About = () => {
                         <div><i className="fas fa-caret-right"></i> SQL</div>
                     </div>
                 </div>
-                <a href="#/" target="_blank" className="underline-btn">Download Resume +</a>
+                <a href={Resume} target="_blank" rel="noreferrer" className="underline-btn">Download Resume +</a>
             </div>
             {modalClicked? 
                 <div className="modal"  onClick={() => setModalClicked(!modalClicked)}>
