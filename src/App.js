@@ -1,7 +1,7 @@
 import './App.css';
 import Home from "./components/Home";
 
-import Portfolio from './components/oldPortfolio/OldPortfolio';
+import Portfolio from './components/oldPortfolio/PortfolioV1';
 
 import { 
   BrowserRouter as Router,
