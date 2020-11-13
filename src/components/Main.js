@@ -1,5 +1,5 @@
 import React from 'react';
-import Carla from "./images/carla-round-portrait.png"
+import Carla from "../images/carla-round-portrait.png"
 import "../App.css"
 import "./css/Main.css"
 

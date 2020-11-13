@@ -1,0 +1,44 @@
+footer{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #48544a;
+}
+.footer-img{
+    width: 100%;
+}
+.footer-img img{
+    width: 100%;
+    display: block;
+}
+.footer-content{
+    margin-top: 60px;
+}
+.footer-content h1{
+    color: #f2f2f2;
+}
+.footer-content p{
+    color: #f2f2f2;
+}
+.contact-form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+input[type='text'], input[type="email"], input[type="submit"],  textarea{
+    height: 45px;
+    padding-left: 10px;
+    outline: none;
+    margin-bottom: 25px;
+}
+textarea{
+    height: 100px;
+    padding-top: 10px;
+    font-size: 12px;
+}
+input[type="submit"]{
+    background-color: black;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
