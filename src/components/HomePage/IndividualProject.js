@@ -1,18 +1,27 @@
-import React from 'react';
-import MainBcs from '../images/bcs-main.mov'
-import MainAvanza from '../images/avanza-main.mov'
-import MainCheffed from '../images/cheffed-main.mov'
-import MainPort1 from '../images/portfolio-main.mov'
+import React, {useState} from 'react';
+import MainBcs from '../../images/bcs-main.mov'
+import MainAvanza from '../../images/avanza-main.mov'
+import MainCheffed from '../../images/cheffed-main.mov'
+import MainPort1 from '../../images/portfolio-main.mov'
 
-import "./css/IndividualProject.css"
+import "../css/IndividualProject.css"
+import {Link} from 'react-router-dom'
 
 
 const IndividualProject = ({id, title,demo,github,description, tech}) => {
+
+  
     return (
         <div className="project">
             <h1>{title}</h1>
+            
             <div className="project-links">
-                <a href={demo} target="_blank" rel="noreferrer">DEMO</a>
+                {id === 3?
+                    <Link to='/portfolio'>DEMO</Link>
+                    
+                : 
+                    <a href={demo} target="_blank" rel="noreferrer">DEMO</a>
+                }
                 <div className="vertical-line"></div>
                 <a href={github} target="_blank" rel="noreferrer">GITHUB</a>
             </div>

@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "emailjs": "^3.3.0",
+    "react-router-dom": "^5.2.0",
     "react-scroll": "^1.8.1"
   }
 }

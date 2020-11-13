@@ -46,7 +46,7 @@ const Navigation = () => {
                 </div>
             </nav>
             <div className="to-top-btn" onClick={scrollToTop}>
-                <i class="fas fa-arrow-up"></i>
+                <i className="fas fa-arrow-up"></i>
             </div>
         </div>
     );

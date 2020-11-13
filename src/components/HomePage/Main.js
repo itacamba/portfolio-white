@@ -1,7 +1,6 @@
 import React from 'react';
-import Carla from "../images/carla-round-portrait.png"
-import "../App.css"
-import "./css/Main.css"
+import Carla from "../../images/carla-round-portrait.png"
+import "../css/Main.css"
 
 const Main = () => {
     return (

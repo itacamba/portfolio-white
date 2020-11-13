@@ -1,7 +1,7 @@
 import React from 'react';
 import IndividualProject from './IndividualProject';
-import "../App.css"
-import "./css/Projects.css"
+import "../../App.css"
+import "../css/Projects.css"
 const Projects = () => {
     const projects = [
         {
@@ -30,7 +30,7 @@ const Projects = () => {
         },
         {
          title: "Portfolio Version 1",
-         demo: "not ready"  ,
+         demo: "../components/portfolio-v1/PortfolioV1.js"  ,
          github: "https://github.com/itacamba/portfolio-v2" ,
          description: "My first dev portfolio ever launched, showcasing my projects and passion for web development.",
          tech: ['HTML','CSS','JavaScript','PHP'],

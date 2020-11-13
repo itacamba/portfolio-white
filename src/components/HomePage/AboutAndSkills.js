@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import './css/AboutAndSkills.css'
-import Ada from "../images/ada-with-diagram.jpg"
-import Carla from "../images/carla-round-portrait.png"
-import Resume from "../images/resume.pdf"
+import '../css/AboutAndSkills.css'
+import Ada from "../../images/ada-with-diagram.jpg"
+import Carla from "../../images/carla-round-portrait.png"
+import Resume from "../../images/resume.pdf"
 
 const About = () => {
     const [modalClicked, setModalClicked] = useState(false)
