@@ -40,9 +40,9 @@ const Navigation = () => {
                     duration={500}
                 >Contact</Link>
                 <div className="social">
-                    <a href="https://www.linkedin.com/in/carla-sahagun/"><i className="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/itacamba"><i className="fab fa-github"></i></a>
-                    <a href="https://medium.com/@daniela.sahagun03"><i className="fab fa-medium-m"></i></a>
+                    <a href="https://www.linkedin.com/in/carla-sahagun/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/itacamba" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
+                    <a href="https://medium.com/@daniela.sahagun03" target="_blank" rel="noreferrer"><i className="fab fa-medium-m"></i></a>
                 </div>
             </nav>
             <div className="to-top-btn" onClick={scrollToTop}>
