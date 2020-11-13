@@ -18,6 +18,7 @@ footer{
 }
 .footer-content p{
     color: #f2f2f2;
+    text-align: left;
 }
 .contact-form{
     margin-top: 30px;
@@ -33,7 +34,7 @@ input[type='text'], input[type="email"], input[type="submit"],  textarea{
 textarea{
     height: 100px;
     padding-top: 10px;
-    font-size: 12px;
+    font-size: 13px;
 }
 input[type="submit"]{
     background-color: black;
@@ -41,4 +42,46 @@ input[type="submit"]{
     color: #fff;
     cursor: pointer;
     -webkit-appearance: none;
+}
+.form-error{
+    margin-top: 20px;
+    color: rgb(240, 116, 116); 
+    display: none;
+}
+.form-success{
+    width: 90%;
+    max-width: 600px;
+    height: 250px;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 5px;
+    transform: translate(-50%,-50%);
+    background-color: #fff2df;
+    text-align: center;
+    display: none;
+}
+.form-success h1{
+    padding-top: 20px;
+}
+.form-success p{
+    padding-top: 20px;
+}
+.form-success .social{
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.email-js-error{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(241, 96, 96);
+    padding:20px;
+    z-index: 100;
+    display: none;
+}
+.email-js-error p{
+    color: #fff;
 }

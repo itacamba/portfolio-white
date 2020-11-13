@@ -7,34 +7,51 @@ export default function ContactUs() {
 
     function sendEmail(e) {
       e.preventDefault();
-  
+      const errorJs = document.querySelector('.email-js-error')
       emailjs.sendForm('service_t2dxw3t', 'template_hmp4tfm', e.target, 'user_XiMZOd167CfBlFaRvEfg3')
+
         .then((result) => {
             console.log(result.text);
         }, (error) => {
-            console.log(error.text);
+            console.log(error)
+            errorJs.style.display = "block"
+            setTimeout(()=>{
+                errorJs.style.display = "none"
+            },3000)
         });
     }
-    function validateForm(){
 
-    }
     function handleSubmit(e){
         e.preventDefault()
         const name = document.querySelector('#name-input')
         const email = document.querySelector('#email-input')
         const message = document.querySelector('#message-input')
+        const error = document.querySelector('.form-error')
+        const success = document.querySelector('.form-success')
         
         if(isEmpty(name)){
             // error name
-            console.log("Empty name")
+            error.style.display = "block"
         } else if (isEmpty(email)){
             // error email
-            console.log("Empty email")
+            error.style.display = "block"
         } else if (isEmpty(message)){
             // error message
-            console.log("Empty message")
+            error.style.display = "block"
         } else {
-            // send 
+            error.style.display = "none"
+            // send email
+            sendEmail(e)
+            // clear form
+            name.value = ""
+            email.value = ""
+            message.value = ""
+            // show success!
+            success.style.display = "block"
+            setTimeout(() => {
+                success.style.display = "none"
+            },3000)
+    
         }
     }
     function isEmpty(node){
@@ -53,6 +70,9 @@ export default function ContactUs() {
                     just need to accelerate the completion of one,
                     contact me. Let's build something!
                 </p>
+                <div className="form-error">
+                    * Please fill out all required fields.
+                </div>
             </div>
             <form className="contact-form max-600-container" onSubmit={handleSubmit}>
                 <input id="name-input" type="text" name="name" placeholder="NAME" />
@@ -63,6 +83,18 @@ export default function ContactUs() {
 
                 <input type="submit" value="SEND" />
             </form>
+            <div className="form-success">
+                <h1>Thank you for contacting me!</h1>
+                <p>I will get back to you as soon as possible.</p>
+                <div className="social">
+                    <a href="https://www.linkedin.com/in/carla-sahagun/"><i className="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/itacamba"><i className="fab fa-github"></i></a>
+                    <a href="https://medium.com/@daniela.sahagun03"><i className="fab fa-medium-m"></i></a>
+                </div>
+            </div>
+            <div className="email-js-error">
+                <p>Error Sending Message - Email.js</p>
+            </div>
       </footer>
     );
   }
