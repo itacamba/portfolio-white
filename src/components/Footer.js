@@ -63,7 +63,7 @@ export default function ContactUs() {
             <div className="footer-img">
                 <img src={GirlComputer} alt=""/>
             </div>
-            <div className="max-600-container footer-content">
+            <div className="max-600-container footer-content" id="contact">
                 <h1>Get in touch.</h1>
                 <p>
                     If you are looking to start a project or

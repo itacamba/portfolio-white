@@ -38,7 +38,7 @@ const Projects = () => {
         }
     ]
     return (
-        <div className="max-600-container projects">
+        <div className="max-600-container" id="projects">
             <h3>TECHNICAL PROJECTS</h3>
             {projects.map((project,i) => 
             <IndividualProject key={i}

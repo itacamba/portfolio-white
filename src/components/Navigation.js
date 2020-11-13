@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import "./css/Navigation.css"
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navigation = () => {
     // Declare a new state variable, which we'll call "count"
     const [open, setOpen] = useState(false)
 
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
 
     return (
         <div>
@@ -14,19 +18,36 @@ const Navigation = () => {
                 <div className="bar3"></div>
             </div>
             <nav className={open? 'show' : null}>
-                <a href="/#">About</a>
-                <a href="/#">Skills</a>
-                <a href="/#">Projects</a>
-                <a href="/#">Code Challenges</a>
-                <a href="/#">Blogs</a>
-                <a href="/#">Contact</a>
+                <Link
+                    activeClass="active"
+                    to="about-skills-section"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                >About & Skills</Link>
+                <Link
+                    activeClass="active"
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                >Projects</Link>
+                <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                >Contact</Link>
                 <div className="social">
                     <a href="https://www.linkedin.com/in/carla-sahagun/"><i className="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/itacamba"><i className="fab fa-github"></i></a>
                     <a href="https://medium.com/@daniela.sahagun03"><i className="fab fa-medium-m"></i></a>
                 </div>
             </nav>
-
+            <div className="to-top-btn" onClick={scrollToTop}>
+                <i class="fas fa-arrow-up"></i>
+            </div>
         </div>
     );
 };
