@@ -10,7 +10,7 @@ const Main = () => {
             </div>
             <h3>HELLO, MY NAME IS</h3>
             <h1>Carla Sahagun</h1>
-            <p>I am a front-end developer based in Herndon, VA.
+            <p>I am a front-end developer based in the Washington D.C. Metro Area.
                 I specialize in building web applications that
                 deliver exceptional user experiences.
             </p>
