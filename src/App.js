@@ -1,7 +1,7 @@
 import './App.css';
 import Home from "./components/Home";
 
-import Portfolio from './components/oldPortfolio/PortfolioV1';
+// import Portfolio from './components/oldPortfolio/PortfolioV1';
 
 import { 
   BrowserRouter as Router,
@@ -21,7 +21,7 @@ function App() {
       
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/portfolio" component={Portfolio} />
+        {/* <Route exact path="/portfolio" component={Portfolio} /> */}
       </Switch>
       {/* <Footer/> Took Footer out so the Home can display independently from the Portfolio  */}
     </Router>
