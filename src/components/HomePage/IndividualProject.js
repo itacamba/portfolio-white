@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import MainBcs from '../../images/bcs-main.mov'
 import MainAvanza from '../../images/avanza-main.mov'
 import MainCheffed from '../../images/cheffed-main.mov'
