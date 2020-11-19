@@ -11,8 +11,15 @@ const Navigation = () => {
     };
 
     const showRightShadow = () => {
-        const shadow = document.querySelector('.nav-right-shadow')
-        !navOpen? shadow.style.display = "block" : shadow.style.display = "none"
+        const shadow = document.querySelector('.nav-right-shadow'),
+              icon = document.querySelector('#menu-icon-container')
+        if(!navOpen){
+            shadow.style.display = "block"
+            icon.style.background = "none"
+        } else {
+            shadow.style.display = "none"
+            icon.style.background = "white"
+        }
         
     }
 
