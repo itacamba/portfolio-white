@@ -23,12 +23,12 @@ p{
 }
 h1{
   /* font-size: 27px; */
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   font-family: 'Baskervville', serif;
 }
 h3{
   font-size: 13px;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   color: rgb(190, 160, 94);
 }
 .max-600-container{
