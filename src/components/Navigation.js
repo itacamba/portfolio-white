@@ -4,20 +4,26 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navigation = () => {
     // Declare a new state variable, which we'll call "count"
-    const [open, setOpen] = useState(false)
+    const [navOpen, setNavOpen] = useState(false)
 
     const scrollToTop = () => {
         scroll.scrollToTop();
     };
 
+    const showRightShadow = () => {
+        const shadow = document.querySelector('.nav-right-shadow')
+        !navOpen? shadow.style.display = "block" : shadow.style.display = "none"
+        
+    }
+
     return (
         <div>
-            <div id="menu-icon-container" className={open? "change": null} onClick={() => setOpen(!open)}>
+            <div id="menu-icon-container" className={navOpen? "change": null} onClick={() => {setNavOpen(!navOpen); showRightShadow()}}>
                 <div className="bar1"></div>
                 <div className="invis"></div>
                 <div className="bar3"></div>
             </div>
-            <nav className={open? 'show' : null}>
+            <nav className={navOpen? 'show' : null}>
                 <Link
                     activeClass="active"
                     to="about-skills-section"
@@ -47,6 +53,9 @@ const Navigation = () => {
             </nav>
             <div className="to-top-btn" onClick={scrollToTop}>
                 <i className="fas fa-arrow-up"></i>
+            </div>
+            <div className="nav-right-shadow" onClick={() => {setNavOpen(!navOpen); showRightShadow()}}>
+
             </div>
         </div>
     );

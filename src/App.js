@@ -16,9 +16,6 @@ function App() {
     <Router className="App">
         {/* <Header/>Took Header out so the Home can display independently from the Portfolio  */}
 
-
-      
-      
       <Switch>
         <Route exact path="/" component={Home} />
         {/* <Route exact path="/portfolio" component={Portfolio} /> */}

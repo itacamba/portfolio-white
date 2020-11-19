@@ -82,6 +82,9 @@ nav a:hover{
     color: #fff;
     font-size: 25px;
 }
+.nav-clickable-right{
+    display: none;
+}
 @media screen and (max-width: 475px){
     #menu-icon-container{
         top: 40px
@@ -108,5 +111,15 @@ nav a:hover{
     }
     nav a{
         font-size: 15px;
+    }
+    .nav-right-shadow{
+
+        position: fixed;
+        width: 100%;
+        top:0;
+        right:0;
+        height: 100vh;
+        background-color: rgba(0,0,0,.3);
+        display: none;
     }
 }
