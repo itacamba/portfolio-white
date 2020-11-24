@@ -1,27 +1,52 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef} from 'react';
 import "./css/Navigation.css"
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const Navigation = () => {
     // Declare a new state variable, which we'll call "count"
     const [navOpen, setNavOpen] = useState(false)
 
-    const scrollToTop = () => {
-        scroll.scrollToTop();
-    };
-
+    // clickable container when mobile menu appears
     const showRightShadow = () => {
-        const shadow = document.querySelector('.nav-right-shadow'),
-              icon = document.querySelector('#menu-icon-container')
+        const shadow = document.querySelector('.nav-right-shadow')
         if(!navOpen){
             shadow.style.display = "block"
-            icon.style.background = "none"
         } else {
             shadow.style.display = "none"
-            icon.style.background = "white"
         }
-        
     }
+    // hide-show header on scroll
+    const prevScrollY = useRef(0);
+
+    const [goingDown, setGoingDown] = useState(true);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        const currentScrollY = window.scrollY;
+        // will hide the navbar only after 400px
+        if (prevScrollY.current < currentScrollY && goingDown && currentScrollY > 400) {
+          setGoingDown(false);
+          const header = document.getElementById("header")
+          header.classList.add('hide')
+        //   console.log("going down")
+        }
+        if (prevScrollY.current > currentScrollY && !goingDown) {
+          setGoingDown(true);
+          const header = document.getElementById("header")
+          header.classList.remove('hide')
+        //   console.log("going up")
+
+        }
+  
+        prevScrollY.current = currentScrollY;
+        // The following  line of code gives us the Y coordinates
+        // console.log(goingDown, currentScrollY);
+      };
+  
+      window.addEventListener("scroll", handleScroll, { passive: true });
+  
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, [goingDown]);
 
     return (
         <div>
@@ -58,9 +83,6 @@ const Navigation = () => {
                     <a href="https://medium.com/@daniela.sahagun03" target="_blank" rel="noreferrer"><i className="fab fa-medium-m"></i></a>
                 </div>
             </nav>
-            <div className="to-top-btn" onClick={scrollToTop}>
-                <i className="fas fa-arrow-up"></i>
-            </div>
             <div className="nav-right-shadow" onClick={() => {setNavOpen(!navOpen); showRightShadow()}}>
 
             </div>

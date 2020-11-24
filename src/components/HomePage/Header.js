@@ -5,7 +5,7 @@ import "../css/Header.css"
 
 const Header = () => {
     return (
-        <header>
+        <header id="header">
             <Navigation/>
             <Logo/>
         </header>

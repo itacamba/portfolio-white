@@ -1,10 +1,15 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import GirlComputer from "../images/girl-computer.jpeg"
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./css/Footer.css"
 
 export default function ContactUs() {
 
+    // scroll to Top from react-scroll
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
     function sendEmail(e) {
       e.preventDefault();
       const errorJs = document.querySelector('.email-js-error')
@@ -94,6 +99,9 @@ export default function ContactUs() {
             </div>
             <div className="email-js-error">
                 <p>Error Sending Message - Email.js</p>
+            </div>
+            <div className="to-top-btn" onClick={scrollToTop}>
+                <i className="fas fa-arrow-up"></i>
             </div>
       </footer>
     );

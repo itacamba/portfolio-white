@@ -4,10 +4,19 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-    /* border:1px solid red */
+    height: 70px;
+    /* border:1px solid red; */
+    background: #fff;
+    position: fixed;
+    transform: translateY(0);
+    transition: .5s ease-out;
 }
 
+
+header.hide{
+    transform: translateY(-100%);
+    transition: .5s ease-in;
+}
 .logo h1{
     font-size: 27px;
     letter-spacing: 2px;
