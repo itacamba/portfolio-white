@@ -1,7 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import GirlComputer from "../images/girl-computer.jpeg"
-import { Link, animateScroll as scroll } from "react-scroll";
+import {animateScroll as scroll } from "react-scroll";
 import "./css/Footer.css"
 
 export default function ContactUs() {
