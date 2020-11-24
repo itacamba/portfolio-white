@@ -1,0 +1,1133 @@
+.unique-css-portfolio{
+    padding: 0;
+    margin: 0;
+    color: #f2f2f2;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: .4px;
+    word-spacing: .5px;
+}
+.unique-css-portfolio a{
+    text-decoration: none;
+    letter-spacing: .4px;
+}
+
+.unique-css-portfolio .container-80{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.unique-css-portfolio .container-90{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.unique-css-portfolio .container-95{
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.unique-css-portfolio #main{
+    width: 100%;
+    height: 90vh;
+}
+.unique-css-portfolio header{
+    width: 100%;
+    padding: 0 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background: #25274D;
+    position: fixed;
+    top: 0;
+    transition: top 0.1s ease-in-out;
+    z-index: 206;
+}
+
+.unique-css-portfolio #logo{
+    z-index: 100;
+    width: 40px;
+    cursor: pointer;
+}
+.unique-css-portfolio #logo img{
+    width: 100%;
+}
+.unique-css-portfolio .mobile-navbar{
+    display: none;
+}
+.unique-css-portfolio .navbar{
+    z-index: 100;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.unique-css-portfolio .navbar > a{
+    font-family: 'Cabin';
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 45px;
+}
+.unique-css-portfolio .navbar a:last-child{
+    color: #f2f2f2;
+}
+.unique-css-portfolio .theme-btn{
+    color: #f2f2f2;
+    border-radius:5px;
+    background: #2e9cca;
+    padding: 10px 25px;
+}
+.unique-css-portfolio .hero-content{
+    width: 100%;
+    background-image: url('./images/woman-coding.webp'), url('./images/woman-coding.png');
+    padding: 0 15%;
+    height: 100%; /* makes it vertically centered*/
+    display: flex;
+    object-fit: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-position: center;
+    background-attachment: fixed;
+   
+}
+.unique-css-portfolio .hero-content p{
+    z-index: 101;
+    color: #f2f2f2;
+    font-family: 'Cabin';
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: right;
+}
+.unique-css-portfolio .hero-content h1{
+    margin-top: 15px;
+    font-family: 'Montserrat';
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: right;
+}
+.unique-css-portfolio .hero-content h2{
+    width: 40%;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Cabin';
+    text-align: right;
+    word-spacing: 1px;
+    line-height: 25px; 
+    /* border: 1px solid red; */
+}
+.unique-css-portfolio .hero-content > a{
+    float: right;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+/* About Me */
+.unique-css-portfolio .background{
+    width: 100%;
+    margin-top: 50px;
+    /* background-color: #1B1042; */
+}
+.unique-css-portfolio #about{
+    max-width: 1020px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.unique-css-portfolio .section-name{
+    display: flex;
+    width: 100%;
+    font-size: 13px;
+}
+.unique-css-portfolio .section-name h1{
+    font-size: 10px;
+    word-spacing: 4px;
+    color: #464866;
+    /* color: #D6CEF3; */
+}
+.unique-css-portfolio .straight-line{
+    width: 30px;
+    height: .5px;
+    margin: 7px 8px 0 8px;
+    background: #464866;
+    /* background-color: #D6CEF3; */
+}
+.unique-css-portfolio .about-me{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* border: 1px solid blue; */
+    text-align: justify;
+    background: #f2f2f2;
+    padding: 5%;
+}
+.unique-css-portfolio .about-me > h1{
+    margin-top: 25px;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #464866;
+}
+.unique-css-portfolio .about-me span{
+    color: #2E9CCA;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 13px;
+    padding-left: 5px;
+}
+.unique-css-portfolio .about-me > p{
+    margin-top: 25px;
+    color: #8b909e;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+.unique-css-portfolio #skills{
+
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 30px;
+    /* border: 1px solid yellow; */
+}
+.unique-css-portfolio .skills-left{
+    width: 45%;
+}
+.unique-css-portfolio .skills-right{
+    width: 45%;
+}
+.unique-css-portfolio .skill{
+    /* border: 1px solid red; */
+    display: flex;
+    margin-bottom: 10px;
+}
+.unique-css-portfolio .skill i{
+    font-size: 14px;
+    color: #2e9cca;
+    margin-right: 10px;
+    /* border: 1px solid teal; */
+}
+.unique-css-portfolio .skill > p{
+    font-family: 'fira Code';
+    /* color: #7a7b80; */
+    color: #2e9cca;
+    font-size: 13px;
+    /* border: 1px solid green; */
+}
+.unique-css-portfolio .my-picture{
+    width: 35%;
+    /* border: 1px solid red; */
+}
+.unique-css-portfolio .my-picture img{
+    width: 100%;
+    display: block;
+    /* border: 1px solid yellow; */
+}
+.unique-css-portfolio .about-me .theme-btn{
+    margin-top: 40px;
+    font-size: 13px;
+}
+/* End About Me */
+/*-- Modal About ---*/
+
+.unique-css-portfolio #modal-about{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    top:0;
+    left:0;
+    padding-top: 90px;
+    z-index: 120;
+    display: none;
+}
+.unique-css-portfolio #modal-card{
+    max-width: 600px;
+    margin: 0 auto;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    position: relative;
+}
+.unique-css-portfolio .modal-x{
+    position: absolute;
+    top: 20px;
+    right:20px;
+    cursor: pointer;
+}
+.unique-css-portfolio .modal-x i{
+    font-size: 20px;
+    color:#333333;
+}
+.unique-css-portfolio .modal-img{
+    width: 25%;
+    margin: 20px auto;
+    
+}
+.unique-css-portfolio .modal-img img{
+    width: 100%;
+}
+.unique-css-portfolio .modal-content{
+    width: 80%;
+    margin: 0 auto;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+.unique-css-portfolio .modal-content p {
+    font-size: 15px;
+    color: #535353;
+    text-align: justify;
+    line-height: 25px;
+    margin-bottom: 25px;
+    
+}
+.unique-css-portfolio .modal-btn{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: #ffffff;
+    background: #2E9CCA;
+    border-radius: 5px;
+    padding: 7px 20px;
+    font-size: 12px;
+}
+/*-- End Modal About ---*/
+.unique-css-portfolio #opportunity{
+    margin-top: 50px;
+    width: 100%;
+    background: #25274D;
+}
+.unique-css-portfolio #opportunity h1{
+    font-size: 20px;
+    color: rgba(242, 242, 242,.5);
+    font-family: 'Montserrat';
+    font-weight: 100;
+    padding: 30px 0;
+    font-weight: bold;
+    text-align: center;
+}
+/*-- women who code ---*/
+.unique-css-portfolio .women-programming{
+
+    width: 100%;
+    /* border: 1px solid red; */
+    background-image: url('./images/women-programming.webp'), url('./images/women-programming.png');
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 370px;
+    position: relative;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*-- END women who code ---*/
+
+
+/* Projects */
+.unique-css-portfolio #projects{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-top: 50px;
+    position: relative;
+    /* border: 1px solid red; */
+}
+.unique-css-portfolio #projects > h1{
+    margin-top: 25px;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    /* color: #E3EBFF; */
+    color: #464866;
+
+}
+.unique-css-portfolio #projects > p{
+    margin-top: 25px;
+    color:#8b909e;
+    width: 50%;
+    line-height: 25px;
+}
+.unique-css-portfolio #projects-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.unique-css-portfolio .project{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* border:1px solid yellow; */
+}
+/* carousel */
+.unique-css-portfolio .carousel{
+    position: relative;
+    height: 400px;
+    width: 60%;
+    /* border: 1px solid red; */
+}
+.unique-css-portfolio .carousel__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.unique-css-portfolio .carousel__track-container{
+    position: relative;
+    background:none;
+    height: 100%;
+    overflow: hidden;
+}
+.unique-css-portfolio .carousel__track{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+.unique-css-portfolio .carousel__slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.unique-css-portfolio .carousel__button{
+    position: absolute;
+    height: 20px;
+    top: 40%;
+    transform: translateY(40%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    /* border-radius: 50px;
+    border: 1px solid red; */
+}
+.unique-css-portfolio .carousel__button i {
+    font-size: 20px;
+    color: #8b909e;
+}
+.unique-css-portfolio .carousel__button--left{
+    left: -50px;
+}
+.unique-css-portfolio .carousel__button--right{
+
+    right: -50px;
+}
+/* End carousel */
+
+.unique-css-portfolio .project-content{
+    width: 35%;
+    background: #f2f2f2;
+    padding:25px;
+    padding-top: 40px;
+    /* border: 1px solid red; */
+}
+
+.unique-css-portfolio .project-content > p{
+    color: #2e9cca;
+    font-size: 14px;
+    text-align: right;
+    display: block;
+}
+.unique-css-portfolio .project:nth-child(even) .project-content > p {
+    text-align: left;
+}
+.unique-css-portfolio .project-content > h1{
+    margin-top: 10px;
+    text-align: right;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: 18px;
+    color: #464866;
+}
+.unique-css-portfolio .project:nth-child(even) .project-content > h1{
+    text-align: left;
+
+}   
+.unique-css-portfolio .project-content > h2{
+    margin-top:25px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-weight: 400;
+    float: right;
+    padding-left: 25px;
+    text-align: right;
+    color: #8b909e;
+}
+.unique-css-portfolio .project:nth-child(even) .project-content > h2 {
+    text-align: left;
+    padding:0;
+    font-size: 16px;
+    letter-spacing: .4px;
+    padding-right: 25px;
+    line-height: 20px;
+}
+.unique-css-portfolio .tech-used{
+   margin-top: 20px;
+   text-align: right;
+   clear: both;
+   float: right;
+   display: flex;
+   justify-content: flex-end;
+}
+.unique-css-portfolio .project:nth-child(even) .tech-used{
+    text-align: left;
+    float: none;
+    justify-content: flex-start;
+}
+.unique-css-portfolio .tech-used p{
+    color: #9e9e9e;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 12px;
+}
+.unique-css-portfolio .project:nth-child(even) .tech-used p{
+    margin-left: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.unique-css-portfolio .project-icons{
+    margin-top: 20px;
+    clear: both;
+    float: right;
+}
+.unique-css-portfolio .project:nth-child(even) .project-icons{
+    clear: both;
+    float: left;
+
+}
+.unique-css-portfolio .project-icons > a{
+    margin-left: 20px;
+    color: #5357F4;
+    /* color: #444444; */
+    font-size: 20px;
+} 
+.unique-css-portfolio .project:nth-child(even)  .project-icons > a{
+    margin-left: 0;
+    margin-right: 20px;
+}
+.unique-css-portfolio .project-icons a i{
+    color: #464866;
+    font-size:14px;
+}
+
+
+
+/* end Projects*/
+
+
+/* Freelance */
+.unique-css-portfolio #freelance{
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+}
+.unique-css-portfolio .freelance-content{
+    position: absolute;
+    top: 30%;
+    /* background: red; */
+    padding: 25px;
+    width: 70%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+.unique-css-portfolio .freelance-content > h1{
+    font-size: 40px;
+    font-family: 'Montserrat';
+    /* text-align: center; */
+}
+.unique-css-portfolio .freelance-content > p{
+    margin-top: 35px;
+    padding: 0 10%;
+}
+.unique-css-portfolio .freelance-content .hire-me{
+    margin-top: 45px;
+}
+.unique-css-portfolio .hire-me > .theme-btn {
+    background: #2e9cca;
+    font-size: 12px;
+}
+.unique-css-portfolio #freelance img{
+    width: 100%;
+    display: block;
+}
+
+/* End Freelance*/
+
+/*-- Contact --*/
+.unique-css-portfolio #contact{
+    width: 100%;
+    background:#0D0821;
+
+}
+.unique-css-portfolio #contact h1{
+    padding-top: 70px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    width: 100%;
+    text-align: center;
+}
+.unique-css-portfolio #contact p:first-of-type{
+    margin-top: 35px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.unique-css-portfolio #form{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.unique-css-portfolio #form form{
+    display: flex;
+    flex-direction: column;
+}
+.unique-css-portfolio .input-field{
+    /* background-color: #1F2048; */
+    background-color: #262750;
+    border: none;
+    border-bottom: 3px solid #5A5CA6;
+    padding: 13px 0;
+    font-size: 16px;
+    color: #e3e3e3;
+    padding-left: 10px;
+}
+
+.unique-css-portfolio label{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:#9C9FC1;
+    font-size: 14px;
+}
+.unique-css-portfolio textarea{
+    border:none;
+    height: 130px;
+    border-bottom: 3px solid #5A5CA6;
+    background-color: #262750;
+    font-size: 16px;
+    color: #e3e3e3;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.unique-css-portfolio input[type=submit]{
+    font-size: 14px;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 25px;
+    -webkit-appearance: none;
+    background-color: #2e9cca;
+    border: none;
+    border-radius: 5px;
+    color: #f2f2f2;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 0;
+}
+.unique-css-portfolio .social{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.unique-css-portfolio .social i{    
+    color:#9C9FC1;
+    font-size: 18px;
+}
+.unique-css-portfolio .divider{
+    width: 30%;
+    margin: 0 auto;
+    background-color:rgba(255,255,255,.4); ;
+    height: .5px;
+    margin-top: 35px;
+}
+.unique-css-portfolio #copyright {
+    color: #535466;
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+/*-- End Contact --*/
+
+/*--- Demo Pop Up ---*/
+.unique-css-portfolio .demo-pop-up{
+    background-color: #464866;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* centers*/
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 150px;
+    border-radius: 10px;
+    display: none;
+}
+.unique-css-portfolio .demo-pop-up h1{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+    
+}
+/*--- End Demo Pop Up ---*/
+
+@media only screen and (max-width: 975px) {
+    .unique-css-portfolio .freelance-content{
+        width: 100%;
+        top: 20%;
+    }
+}
+/*--- RESPONSIVE 880px ---*/
+@media only screen and (max-width: 880px) {
+    .unique-css-portfolio p{
+        font-size: 14px;
+    }
+    .unique-css-portfolio header{
+        height: 80px;
+    }
+    .unique-css-portfolio .navbar{
+        display: none;
+    }
+    .unique-css-portfolio .mobile-navbar{
+       display: block;
+    }
+    .unique-css-portfolio #logo{
+        margin-left: 2.5%;
+    }
+    .unique-css-portfolio .menu-icon{
+        display: block;
+        position: absolute;
+        top: 28px;
+        right: 5%;
+        z-index: 101;
+        /* border: 1px solid yellow; */
+        cursor: pointer;
+    }
+    .unique-css-portfolio .menu-icon i{
+        font-size: 25px;
+        color: #f23064;
+    }
+    .unique-css-portfolio .mobile-items{
+        position: fixed;
+        top:0;
+        right:0;
+        height: 100vh;
+        background-color: #f2f2f2;
+        width: 50%;
+        padding-top: 70px;
+        z-index: 102;
+        display: none;
+    }
+    .unique-css-portfolio#x-icon{
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        /* border: 1px solid blue; */
+    }
+    /* #x-icon i{
+        font-size: 30px;
+        width: 100%;
+        padding-top: 5px;
+        text-align: center;
+        color: #333333
+    }    */
+    .unique-css-portfolio #x-icon img{
+        width: 100%;
+        display: block;
+        /* border: 1px solid red; */
+    }
+    .unique-css-portfolio .mobile-items a{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px 0;
+        padding-right: 25px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        text-align: right;
+        color: #7a7a7a;
+        border-bottom: 1px solid rgba(0,0,0,.3);
+    }
+    .unique-css-portfolio .mobile-items a:last-child{
+        float: right;
+        margin-top: 15px;
+        margin-right: 25px;
+        font-size: 14px;
+        padding: 10px 15px;
+        width: 120px;
+        text-align: center;
+        background-color: #2e9cca;
+        border-radius: 5px;
+        color:#fff;
+    }
+    /* hero content */
+ 
+    .unique-css-portfolio #main{
+        /* border: 1px solid green; */
+        height: 70vh;
+    }
+    .unique-css-portfolio .hero-content{
+        padding-top: 80px;
+    }
+    .unique-css-portfolio .hero-content p{
+        font-size: 14px;
+    }
+    .unique-css-portfolio .hero-content h1{
+        font-size: 40px;
+        margin-top: 15px;
+    }
+    .unique-css-portfolio .hero-content h2{
+        width: 100%;
+        font-size: 14px;
+
+    }
+    .unique-css-portfolio .hero-content > .theme-btn {
+        /* border: 1px solid #f23064; */
+        margin-top: 30px;
+    }
+    /* End hero content */
+
+    /* About */
+    .unique-css-portfolio #about{
+        margin-top: 0;
+        padding-top: 0;
+        flex-direction: column-reverse;
+       /* border: 1px solid red; */
+    }
+    .unique-css-portfolio .my-picture{
+        width: 150px;
+        margin: 0 auto;
+    }
+    .unique-css-portfolio .about-me{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .unique-css-portfolio .about-me > h1{
+        margin-top: 25px;
+        font-size: 20px;
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+    .unique-css-portfolio #skills{
+        width: 100%;
+    }
+    .unique-css-portfolio .modal-img{
+        width: 150px;
+    }
+    .unique-css-portfolio .modal-content{
+        width: 85%;
+    }
+    .unique-css-portfolio .modal-content > a{
+        margin-top: -55px;
+        padding: 5px 10px;
+    }
+    .unique-css-portfolio .modal-btn{
+        top: 150px;
+        padding: 5px 10px;
+    }
+    /* End About */
+
+    /* Projects */
+
+    .unique-css-portfolio #projects > h1{
+        font-size: 20px;
+    }
+    .unique-css-portfolio #projects > p{
+        width: 80%;
+    }
+    .unique-css-portfolio .project{
+        margin-top: 100px;
+        flex-direction: column;
+    }
+    .unique-css-portfolio .carousel{
+        width: 100%;
+        height: 240px;
+    }
+    .unique-css-portfolio .project-content{
+        margin-top: 25px;
+        width: 100%;
+    }
+    .unique-css-portfolio .project:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+    /* End Projects */
+    /* freelance */
+    .unique-css-portfolio #freelance h1{
+        /* top: 40px; */
+        font-size: 30px;
+    }
+    .unique-css-portfolio #freelance p{
+        /* top: 40%; */
+        display: block;
+        font-size: 14px;
+    } 
+    /* Endf freelance */
+    /* Contact */
+    .unique-css-portfolio #contact > h1{
+        color: #e3e3e3;
+    }
+    .unique-css-portfolio #contact p:first-of-type{
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 30px;
+        line-height: 25px;
+        /* border: 1px solid yellow; */
+    }
+    .unique-css-portfolio #form{
+        width: 60%;
+    }
+    /* End Contact */
+    /* popUp */
+    .unique-css-portfolio .demo-pop-up{
+        width: 60%;
+    }
+    .unique-css-portfolio .demo-pop-up h1{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    /* End popUp */
+    /* contact */
+    .unique-css-portfolio input[type=submit]{
+        font-size: 12px;
+        width: 130px;
+        padding: 10px;
+    }
+
+  }
+  @media only screen and (max-width: 660px) {
+    /* contact */
+    .unique-css-portfolio #form{
+    width: 70%;
+    }
+    /* End Contact */
+    /*  freelance  */
+    .unique-css-portfolio .freelance-content{
+        top: 15%;
+    }
+    .unique-css-portfolio #freelance h1{
+        font-size: 25px;
+    }
+    .unique-css-portfolio #freelance p{
+        line-height: 20px;
+        font-size: 12px;
+    }
+    /* End freelance  */
+    /* popUp */
+    .unique-css-portfolio .demo-pop-up{
+        width: 80%;
+    }
+    .unique-css-portfolio .demo-pop-up h1{
+        font-size: 15px;
+        padding: 10px;
+        line-height: 25px;
+    }
+    /* End popUp */
+  }
+  @media only screen and (max-width: 600px) {
+    .unique-css-portfolio #freelance img{
+        height: 300px;
+        object-fit: cover;
+    }
+    .unique-css-portfolio .hero-content{
+        background-image: url('./images/woman-coding-mobile-dark.webp'), url('./images/woman-coding-mobile-dark.png');
+        height: 450px;
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: none;
+    }
+  }
+
+
+
+
+
+  @media only screen and (max-width: 440px) {
+    /*  freelance  */
+    .unique-css-portfolio .freelance-content{
+        top: 10%;
+    }
+    .unique-css-portfolio .freelance-content > p{
+        margin-top: 15px;
+    }
+    .unique-css-portfolio .hire-me{
+        margin-top:30px;
+        /* border: 1px solid yellow; */
+    }
+    .unique-css-portfolio .hire-me a{
+        padding: 10px 30px;
+    }
+    /* End freelance  */
+
+  
+    .unique-css-portfolio .hero-content{
+        padding-right:25px;
+    }
+    /* about */
+    .unique-css-portfolio .background{
+        margin-top: 100px;
+    }
+    .unique-css-portfolio #about{
+        width: 90%;
+        padding: 0;
+    }
+    /* end about */
+
+    /* skills */
+    .unique-css-portfolio #skills{
+        width: 100%;
+    }
+    .unique-css-portfolio .skill{
+        width: 130px;
+    }
+    /* end skills */
+    
+
+    /* projects */
+    .unique-css-portfolio #projects{
+        width: 90%;
+    }
+    .unique-css-portfolio .carousel{
+        width: 70%;
+        margin: 0 auto;
+    }
+    /* end projects */
+
+    /* contact */
+    .unique-css-portfolio .women-programming{
+        width: 100%;
+        /* border: 1px solid red; */
+        background-image: url('./images/women-programming.webp'), url('./images/women-programming.png');
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        -moz-background-size: auto;
+        -webkit-background-size: auto;
+        background-attachment: scroll;
+        background-size: auto;
+        height: 300px !important;
+        
+    }
+}
+  
+  
+
+@media only screen and (max-width: 310px) {
+    /* skills */
+    .unique-css-portfolio #skills{
+        flex-direction: column;
+    }
+    /* end skills */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  /*-- Scroll to Top ---*/
+  .unique-css-portfolio .to-top{
+    z-index: 105;
+    width: 50px;
+    height: 50px;
+    background-color: #aaabb8;
+    position: fixed;
+    border-radius: 10px;
+    bottom: 5%;
+    right: 2.5%;
+
+}
+.unique-css-portfolio .to-top i {
+    color:#828282;
+    cursor: pointer;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 880px) {
+    .unique-css-portfolio .to-top{
+        right: 5%;
+    }
+}
+/*-- End Scroll to Top ---*/ 
+
+/*- Menu Icon -*/
+.unique-css-portfolio .menu-icon{
+    width: 25px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.unique-css-portfolio #first-line-menu{
+    width: 100%;
+    height: 2px;
+    background: #2e9cca;
+}
+.unique-css-portfolio #second-line-menu{
+    width: 70%;
+    height: 2px;
+    background: #2e9cca;
+}
+.unique-css-portfolio #third-line-menu{
+    width: 100%;
+    height: 2px;
+    background: #2e9cca;
+}
+/*- Menu Icon -*/

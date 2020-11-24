@@ -16,6 +16,7 @@ const IndividualProject = ({id, title,demo,github,description, tech}) => {
             <h1>{title}</h1>
             
             <div className="project-links">
+                {/* if portfolio v1 DEMO is clicked */}
                 {id === 3?
                     <Link to='/portfolio'>DEMO</Link>
                     
